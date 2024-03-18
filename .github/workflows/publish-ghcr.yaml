@@ -7,7 +7,7 @@ jobs:
   build_and_push:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/sheckout@v3
+      - uses: actions/checkout@v3
       - name: Build and push the Image
         run: |
           docker login --username aycakcayy --password ${{secrets.GH_PAT }} ghcr.io
